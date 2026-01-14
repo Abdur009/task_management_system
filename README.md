@@ -35,5 +35,5 @@ This application allows users to create, update, delete, and track tasks with st
 
 ---
 
-## 📁 Project Structure
+
 
