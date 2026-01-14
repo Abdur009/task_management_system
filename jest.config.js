@@ -1,20 +1,17 @@
-export default {
-  testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['<rootDir>/src/setupTests.js'],
-  moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
-  },
-  transform: {
-    '^.+\\.(js|jsx)$': 'babel-jest',
-  },
-  collectCoverageFrom: [
-    'src/**/*.{js,jsx}',
-    '!src/main.jsx',
-    '!src/**/*.test.{js,jsx}',
+module.exports = {
+  testEnvironment: 'node',
+  coveragePathIgnorePatterns: [
+    '/node_modules/',
+    '/tests/',
   ],
   testMatch: [
-    '<rootDir>/src/**/__tests__/**/*.{js,jsx}',
-    '<rootDir>/src/**/*.{spec,test}.{js,jsx}',
+    '**/__tests__/**/*.test.js',
+    '**/?(*.)+(spec|test).js',
+  ],
+  collectCoverageFrom: [
+    'routes/**/*.js',
+    'middleware/**/*.js',
+    '!**/node_modules/**',
   ],
 };
 
