@@ -24,7 +24,7 @@ This application allows users to create, update, delete, and track tasks with st
 ### Frontend
 - React.js
 - Axios
-- CSS / Tailwind CSS / Bootstrap (whichever you used)
+- CSS and Tailwind CSS
 
 ### Backend
 - Node.js
