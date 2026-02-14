@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { apiCache, requestDeduplicator } from '../utils/apiCache';
 
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 // Auth API instance
 const authApi = axios.create({
